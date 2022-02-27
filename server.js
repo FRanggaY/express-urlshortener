@@ -36,13 +36,14 @@ app.post('/api/shorturl', function(req, res) {
   const url = req.body.url;
   if(!isUrl(url)){
     res.json({ error: 'invalid url' })
+  }else{
+    count += 1;
+    urlsShort[count] = url; 
+    res.status(200).json({
+      original_url: url,
+      short_url: count
+    })
   }
-  count += 1;
-  urlsShort[count] = url; 
-  res.status(200).json({
-    original_url: url,
-    short_url: count
-  },)
 });
 
 app.listen(port, function() {
