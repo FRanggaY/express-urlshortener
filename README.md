@@ -8,9 +8,9 @@ yarn install
 ```
 ### Compiles and low-reloads for development
 ```
-node app.js
+node app.js || yarn start
 ```
 ### Compiles and high-reloads for development
 ```
-nodemon app.js || yarn start
+nodemon app.js  || yarn dev
 ```
