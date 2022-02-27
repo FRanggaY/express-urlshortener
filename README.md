@@ -10,7 +10,15 @@ yarn install
 ```
 node app.js || yarn start
 ```
+OR
+```
+yarn start
+```
 ### Compiles and high-reloads for development
 ```
-nodemon app.js  || yarn dev
+nodemon app.js
+```
+OR
+```
+yarn dev
 ```
